@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-lg-9 post_body">
+    <%= simple_format(@post.body) %>
+    <em><p class="post-meta">Posted by <a href="#"><%= @post.author.show_name %></a> on <%= @post.created_at.strftime('%B %d, %Y') %></p></em>
+  </div>
+
+  <div class="col-lg-3 col-lg-offset-9 sidebar">
+    <div class="author_info">
+      <div id="<%=@post.author.last_name.downcase%>" class="author-image"></div>
+      <footer><h4><%= @post.author.show_name %></h4></footer>
+      <footer class="social"><small>Facebook | Instagram | Twitter</small></footer>
+    </div>
+      <p class="author_bio"><%= simple_format(@post.author.bio) %></p>
+  </div>
+
+</div>

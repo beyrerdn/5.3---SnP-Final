@@ -1,0 +1,24 @@
+  <div id="brown" class="author-image">
+  </div>
+  <div class="author-info">
+    <h3 class="author-title">
+<<<<<<< HEAD
+        <%= "Doc Brown" %>
+    </h3>
+    <p class="author-bio">
+        <%= "Doc Brown is the creator and mastermind behind The Dead Writer's Delorean. While he does not write any articles, it is through his inventive genius that we are able to glean wisdom from our favorite authors post-mortem." %>
+=======
+        <%= Author.find_by_last_name("Brown").show_name %>
+    </h3>
+    <p class="author-bio">
+        <%= Author.find_by_last_name("Brown").bio %>
+>>>>>>> bd2e8496480584370d72914f80b6da766f4216ab
+    </p>
+  </div>
+  <p>Here Doc Brown describes his invention:</p>
+  <blockquote>He's absolutely right, Marty. the last thing you need is headaches. Hot, Jesus Christ, Doc. Jesus Christ, Doc, you disintegrated Einstein. Doc, Doc, it's me, Marty. Which one's your pop? I guarantee it.
+
+I gotta go, uh, I gotta go. Thanks very much, it was wonderful, you were all great. See you all later, much later. Who? When could weathermen predict the weather, let alone the future. whoa, whoa Doc, stuck here, I can't be stuck here, I got a life in 1985. I got a girl. He's fine, and he's completely unaware that anything happened. As far as he's concerned the trip was instantaneous. That's why Einstein's watch is exactly one minute behind mine. He skipped over that minute to instantly arrive at this moment in time. Come here, I'll show you how it works. First, you turn the time circuits on. This readout tell you where you're going, this one tells you where you are, this one tells you where you were. You imput the destination time on this keypad. Say, you wanna see the signing of the declaration of independence, or witness the birth or Christ. Here's a red-letter date in the history of science, November 5, 1955. Yes, of course, November 5, 1955.
+
+It's cold, damn cold. Ha, ha, ha, Einstein, you little devil. Einstein's clock is exactly one minute behind mine, it's still ticking. Biff, stop it. Biff, you're breaking his arm. Biff, stop. Oh, just a little weather experiment. What, what, ma? Listen, this is very important, I forgot my video camera, could you stop by my place and pick it up on your way to the mall?</blockquote>
+<h3><%=link_to "About our Time Travelers", authors_path%></h3>

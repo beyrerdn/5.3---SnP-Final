@@ -1,0 +1,29 @@
+<%@authors.each do |author|%>
+  <div id="<%=author.last_name.downcase%>" class="author-image">
+  </div>
+  <div class="author-info">
+    <h3 class="author-title">
+<<<<<<< HEAD
+        <%=link_to author.show_name, author_posts_path(:author_id => author.id) %>
+    </h3>
+    <p class="author-bio">
+        <%= author.bio %></p>
+    <p>
+        <%= link_to 'Edit', edit_author_path(author) %>
+        <%= link_to 'Destroy', author, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </p>
+
+  </div>
+  <hr/>
+<% end %>
+<%= link_to 'New Author', new_author_path %>
+=======
+        <%=link_to author.show_name, author_posts_path(:last_name => author.last_name) %>
+    </h3>
+    <p class="author-bio">
+        <%= author.bio %>
+    </p>
+  </div>
+  <hr/>
+<% end %>
+>>>>>>> bd2e8496480584370d72914f80b6da766f4216ab

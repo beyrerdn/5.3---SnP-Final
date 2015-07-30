@@ -1,0 +1,428 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @font-face {
+   src: font-url('BTTF.ttf');
+   src: font-url('BTTF.ttf') format('truetype');
+   font-family: 'BTTF';
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ body {
+   font-family: Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+
+ .traveler {
+   margin: 0;
+   padding: 0;
+   height: 400px;
+   color: white;
+ }
+
+ #burgess {
+   background: url('authors/anthony-burgess.jpg');
+   background-size: cover;
+   background-position: center;
+ }
+
+ #kesey {
+   background: url('authors/ken-kesey.jpeg');
+   background-size: cover;
+   background-position: center;
+ }
+
+ #vonnegut {
+   background: url('authors/kurt-vonnegut.jpg');
+   background-size: cover;
+   background-position: center;
+ }
+
+ #bradbury {
+   background: url('authors/ray-bradbury.jpg');
+   background-size: cover;
+   background-position: center;
+ }
+
+ #brown {
+   background: url('authors/doc-brown.jpg');
+   background-size: cover;
+   background-position: center;
+ }
+
+ #footer_title {
+   text-align: center;
+   padding-bottom: 20px;
+   font-family: 'BTTF', sans-serif;
+ }
+
+ #time_travelers {
+   padding-bottom: 20px;
+ }
+
+ .intro-header{
+   background-image: url('header_image.jpg');
+   -webkit-background-size: cover;
+   -webkit-background-position: center;
+   height: 800px;
+   color: white;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+ }
+
+ .site-heading h1 {
+   font-size: 500%;
+   font-family: 'BTTF', sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+
+ .site-heading span {
+   font-size: 120%;
+ }
+
+ .copyright {
+   text-align: left;
+ }
+
+ .main-content {
+   padding-top: 20px;
+   font-size: 120%;
+ }
+
+ .author-image {
+   height: 100px;
+   width: 80px;
+   border-radius: 50%;
+   margin: 0;
+   padding: 0;
+   border: 1px solid #d3d3d3;
+ }
+
+ .sidebar {
+   padding-left: 60px;
+   margin: 0;
+ }
+
+ .sidebar h4 {
+   font-weight: bold;
+ }
+
+ .post_body {
+   padding-top: 10px;
+ }
+
+.social {
+  color: grey;
+}
+ /*body{
+   font-family: Helvetica;
+   padding: 0;
+   margin: 0;
+   background-image: url(images/concrete_seamless.png);
+ }
+
+ ul {
+   list-style: none;
+ }
+
+ a {
+   color: grey;
+ }
+
+ h1, h2 {
+   font-family: 'BTTF', sans-serif;
+ }
+
+ .container {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+ }
+
+ .post_header h1 {
+   font-size: 250%;
+   margin: 0;
+   padding: 0;
+   padding-bottom: 10px;
+ }
+
+ .site_header {
+   background-image: url(images/header_image2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   color: white;
+   height: 805px;
+   text-shadow: -1px 1px grey;
+ }
+
+ /*ABOUT and SEARCH*/
+ /*.header_SiteNav li {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+   padding-left: 15px;
+ }
+
+ .header_SiteNav ul {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   right: 10px;
+ }
+
+ /*Site title*/
+ /*.header_SiteNav h5 {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+   padding-left: 5px;
+   padding-top: 16px;
+   position: absolute;
+   }
+
+ .header_SiteNav {
+   width: 100%;
+   position: relative;
+   margin: 0;
+   padding: 0;
+ }
+
+ .header_SiteNav img {
+   display: inline-block;
+   height: 40px;
+   width: auto;
+   border: 1px solid grey;
+   border-radius: 5px;
+   margin-left: 5px;
+   margin-top: 5px;
+ }
+
+ .site_title {
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   padding-top: 280px;
+   position: relative;
+ }
+
+ .site_title p {
+   position: relative;
+   top: -20px;
+ }
+
+ .site_title h1 {
+   font-size: 400%;
+   margin: 0;
+   padding: 0;
+ }
+
+ .author_logo img{
+   height: 80px;
+   width: auto;
+   margin: 0;
+   padding: 0;
+   border-radius: 50%;
+ }
+
+ article.post {
+   display: block;
+   position: relative;
+   width: 80%;
+   padding: 0;
+   margin: auto;
+ }
+
+ .post_content {
+   display: inline-block;
+   width: 60%;
+   margin: auto;
+   margin-top: 15px;
+   padding: 0;
+   padding-left: 30px;
+
+ }
+
+ .blockquote {
+   width: inherit;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 50px;
+   padding-left: 15px;
+   border-left: 3px solid #ccc;
+ }
+
+ .sidebar_section {
+   display: inline-block;
+   position: absolute;
+   width: 30%;
+   margin: auto;
+   margin-top: 15px;
+   padding-left: 100px;
+   text-align: center;
+ }*/
+
+ /*.sidebar_content img {
+   width: 200px;
+   height: auto;
+ }
+
+ .sidebar_content p {
+   text-align: justify;
+ }
+
+ .post_author_info {
+   display: inline-block;
+   position: relative;
+   width: 200px;
+   padding: 0;
+   margin: 0;
+ }*/
+
+ /*Author info image (top right)*/
+ /*.post_author_info img{
+   height: 80px;
+   width: auto;
+   margin: 0;
+   padding: 0;
+   border-radius: 50%;
+   position: relative;
+   text-align: center;
+   border: 1px solid black;
+ }*/
+
+ /*Full author image footer*/
+ /*.post_author_info footer {
+   display: inline-block;
+   position: relative;
+   margin: 0;
+   padding: 0;
+ }*/
+
+ /*Twitter Facebook Instagram*/
+ /*.post_author_info footer ul {
+   display: inline-block;
+   font-size: 80%;
+   margin: 0;
+   padding: 0;
+ }
+
+ .post_author_info li {
+   display: inline-block;
+   padding-bottom: 15px;
+   color: grey;
+ }
+
+ .post_footer {
+   display: block;
+   text-align: center;
+   border-top: 1px solid #d3d3d3;
+   width: 100%;
+ }
+
+ .post_footer h2 {
+   font-family: Helvetica, sans-serif;
+   font-size: 250%;
+ }
+
+ .site_footer {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 500px;
+   position: relative;
+ }
+
+ .authors {
+   display: inline-block;
+   position: absolute;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   padding-left: 12px;
+   color: white;
+   text-shadow: 1px 2px black;
+   background-image: url(images/concrete_seamless.png);
+ }
+
+ .authors h2 {
+   text-align: left;
+   position: relative;
+   top: -15px;
+   left: 10px;
+ }
+
+ .bottom {
+   display: inline-block;
+   background-image: url(images/footer_image.jpg);
+   background-size: cover;
+   background-position: center;
+   position: absolute;
+   bottom: 5px;
+   color: grey;
+   font-size: 80%;
+   width: 100%;
+   height: 100px;
+   margin: 0;
+   padding: 0;
+   padding-top: 5px;
+ }
+
+ .bottom_contents p {
+   display: inline-block;
+   position: relative;
+   margin: 0;
+   padding: 0;
+   left: 20px;
+   top: 25px;
+ }
+
+ .bottom_contents img{
+   display: inline-block;
+   position: relative;
+   height: 20px;
+   width: auto;
+   border: 1px solid grey;
+   border-radius: 5px;
+   left: 15px;
+   top: 30px;
+ }
+ .bottom_contents ul {
+   display: inline-block;
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   right: 30px;
+   top: 35px;
+ }
+
+ .bottom_contents li{
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+ }
+
+ .bottom_contents {
+   position: relative;
+ }*/

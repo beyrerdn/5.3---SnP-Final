@@ -1,0 +1,16 @@
+<%@posts.each do |post|%>
+  <div class="post-preview">
+      <a href="<%= post_path(:id => post.id) %>">
+          <h2 class="post-title">
+              <%= post.title %>
+          </h2>
+          <h3 class="post-subtitle">
+              <%= post.summary %>
+          </h3>
+      </a>
+      <div id="<%=post.author.last_name.downcase%>" class="author-image">
+      </div>
+      <p class="post-meta">Posted by <a href="#"><%= post.author.show_name %></a> on <%= post.created_at.strftime('%B %d, %Y') %></p>
+  </div>
+  <hr/>
+<% end %>
